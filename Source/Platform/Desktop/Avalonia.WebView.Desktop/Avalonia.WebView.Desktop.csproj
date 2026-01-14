@@ -7,8 +7,8 @@
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.Desktop</PackageId>
-		<Title>WebView.Avalonia.Desktop</Title> 
+		<PackageId>WebView.Avalonia.Desktop.AGPL</PackageId>
+		<Title>WebView.Avalonia.Desktop.AGPL</Title>
 	</PropertyGroup>
 
 	<ItemGroup>

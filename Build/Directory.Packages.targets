@@ -3,19 +3,19 @@
 		<!--Package-->
 		<PackageId Condition="'$(PackageId)' == ''">$(MSBuildProjectName)</PackageId>
 		<Title  Condition="'$(Title)' == ''">$(MSBuildProjectName)</Title>
-		<WebviewVersion>11.0.0.1</WebviewVersion>
+		<WebviewVersion>11.0.0.2026011404</WebviewVersion>
 		<WebViewPackageOutputPath>$(RepositoryDirectory)_nuget\</WebViewPackageOutputPath>
 		<VersionPrefix>avalonia11.0.0</VersionPrefix>
-		<Authors>MicroSugarDeveloperOrg</Authors>
-		<Company>MicroSugarDeveloperOrg</Company>
+		<Authors>DotNet-AGPL</Authors>
+		<Company>AGPL</Company>
 		<Description>This repository is a set of controls that will help you add webview control.</Description>
 		<PackageTags>webview for avaloniaui</PackageTags>
-		<RepositoryUrl>https://github.com/MicroSugarDeveloperOrg/Avalonia.WebView</RepositoryUrl>
-		<PackageProjectUrl>https://github.com/MicroSugarDeveloperOrg/Avalonia.WebView</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/DotNet-AGPL/Avalonia.WebView</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/DotNet-AGPL/Avalonia.WebView</PackageProjectUrl>
 		<RepositoryType>git</RepositoryType>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageIcon>webview@avalonia-logo.png</PackageIcon>
 		<Version>$(WebviewVersion)</Version>

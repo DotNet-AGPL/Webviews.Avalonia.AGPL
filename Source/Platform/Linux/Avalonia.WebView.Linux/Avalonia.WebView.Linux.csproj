@@ -7,8 +7,8 @@
 	<Import Project="$(BuildToolsDirectory)Directory.Packages.targets" />
 
 	<PropertyGroup>
-		<PackageId>WebView.Avalonia.Linux</PackageId>
-		<Title>WebView.Avalonia.Linux</Title>
+		<PackageId>WebView.Avalonia.Linux.AGPL</PackageId>
+		<Title>WebView.Avalonia.Linux.AGPL</Title>
 		<!--<TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>-->
 		<TargetsForTfmSpecificContentInPackage>$(TargetsForTfmSpecificContentInPackage);CopyTargetsForTfmSpecificContentInPackage</TargetsForTfmSpecificContentInPackage>
 		<!--<TargetsForTfmSpecificDebugSymbolsInPackage>$(TargetsForTfmSpecificDebugSymbolsInPackage);CopyProjectReferencesSymbolsToPackage</TargetsForTfmSpecificDebugSymbolsInPackage>-->
@@ -77,7 +77,7 @@
 	<ItemGroup>
 		<PackageReference Include="Avalonia" />
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Physical" />
-		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces"/>
+		<PackageReference Include="Microsoft.Bcl.AsyncInterfaces" />
 		<PackageReference Include="GtkSharp" />
 		<PackageReference Include="WebkitGtkSharp" />
 	</ItemGroup>
@@ -89,10 +89,10 @@
 		<ProjectReference Include="..\..\..\DryIoc.Shared\DryIoc.Shared.csproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
-		<ProjectReference Include="..\..\..\WebView.Core\WebView.Core.csproj" >
+		<ProjectReference Include="..\..\..\WebView.Core\WebView.Core.csproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
-		<ProjectReference Include="..\Linux.WebView.Core\Linux.WebView.Core.csproj" >
+		<ProjectReference Include="..\Linux.WebView.Core\Linux.WebView.Core.csproj">
 			<PrivateAssets>all</PrivateAssets>
 		</ProjectReference>
 	</ItemGroup>
