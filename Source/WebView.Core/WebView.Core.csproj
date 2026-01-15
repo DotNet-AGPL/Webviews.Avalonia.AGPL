@@ -10,6 +10,7 @@
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
 		<PackageReference Include="Microsoft.Extensions.FileProviders.Abstractions" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" />
     </ItemGroup>
 
     <ItemGroup Condition="'$(IsLinux)'=='true'">

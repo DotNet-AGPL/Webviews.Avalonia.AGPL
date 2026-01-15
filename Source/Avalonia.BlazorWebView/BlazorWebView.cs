@@ -16,18 +16,18 @@ public sealed partial class BlazorWebView : Control, IVirtualWebView<BlazorWebVi
 
     public BlazorWebView(IServiceProvider? serviceProvider = default)
     {
-        var properties = WebViewLocator.s_ResolverContext.GetRequiredService<WebViewCreationProperties>();
+        var properties = WebViewLocator.s_ResolverContext.GetIocService<WebViewCreationProperties>();
         _creationProperties = properties ?? new WebViewCreationProperties();
-        _viewHandlerProvider = WebViewLocator.s_ResolverContext.GetRequiredService<IViewHandlerProvider>();
-        _platformBlazorWebViewProvider = WebViewLocator.s_ResolverContext.GetRequiredService<IPlatformBlazorWebViewProvider>();
-        var blazorBuilder = WebViewLocator.s_ResolverContext.GetRequiredService<IBlazorWebViewApplicationBuilder>();
+        _viewHandlerProvider = WebViewLocator.s_ResolverContext.GetIocService<IViewHandlerProvider>();
+        _platformBlazorWebViewProvider = WebViewLocator.s_ResolverContext.GetIocService<IPlatformBlazorWebViewProvider>();
+        var blazorBuilder = WebViewLocator.s_ResolverContext.GetIocService<IBlazorWebViewApplicationBuilder>();
         var blazorApplication = blazorBuilder.Build();
         _blazorApplication = blazorApplication;
         _serviceProvider = blazorApplication.ServiceProvider;
 
-        _dispatcher = _serviceProvider.GetRequiredService<AvaloniaDispatcher>();
-        _jsComponents = _serviceProvider.GetRequiredService<JSComponentConfigurationStore>();
-        var setting = _serviceProvider.GetRequiredService<IOptions<BlazorWebViewSetting>>();
+        _dispatcher = _serviceProvider.GetIocService<AvaloniaDispatcher>();
+        _jsComponents = _serviceProvider.GetIocService<JSComponentConfigurationStore>();
+        var setting = _serviceProvider.GetIocService<IOptions<BlazorWebViewSetting>>();
 
         if (setting.Value.ComponentType is not null && !string.IsNullOrWhiteSpace(setting.Value.Selector))
         {

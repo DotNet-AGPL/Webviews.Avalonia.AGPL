@@ -1,7 +1,7 @@
 ﻿<Project>
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-    <AvaloniaVersion>11.0.0</AvaloniaVersion>
+    <AvaloniaVersion>11.3.0</AvaloniaVersion>
     <AntDesignVersion>11.0.0</AntDesignVersion>
     <Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>true</Avalonia_I_Want_To_Use_Private_Apis_In_Nuget_Package_And_Promise_To_Pin_The_Exact_Avalonia_Version_In_Package_Dependency>
   </PropertyGroup>
@@ -32,6 +32,7 @@
     <PackageVersion Include="Avalonia.Direct2D1" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Headless.Vnc" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
+    <PackageVersion Include="ReactiveUI.Avalonia" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Fonts.Inter" Version="$(AvaloniaVersion)" />
     <PackageVersion Include="Avalonia.Themes.Simple" Version="$(AvaloniaVersion)" />
@@ -44,7 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <PackageVersion Include="DryIoc" Version="5.4.1" />
-    <PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.1.1" />
+	<PackageVersion Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
+	<PackageVersion Include="Microsoft.SourceLink.GitHub" Version="1.1.1" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />
     <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.4.0" />
     <PackageVersion Include="Microsoft.Bcl.AsyncInterfaces" Version="10.0.2" />

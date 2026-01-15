@@ -1,5 +1,6 @@
 ﻿using Avalonia.WebView.Linux;
 using Linux.WebView.Core;
+using WebViewCore.Ioc;
 
 namespace Avalonia.WebView.Desktop;
 

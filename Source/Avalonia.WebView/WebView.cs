@@ -18,10 +18,10 @@ public sealed partial class WebView : Control, IVirtualWebView<WebView>, IEmptyV
 
     public WebView(IServiceProvider? serviceProvider = default)
     {
-        var properties = WebViewLocator.s_ResolverContext.GetRequiredService<WebViewCreationProperties>();
+        var properties = WebViewLocator.s_ResolverContext.GetIocService<WebViewCreationProperties>();
         _creationProperties = properties ?? new WebViewCreationProperties();
 
-        _viewHandlerProvider = WebViewLocator.s_ResolverContext.GetRequiredService<IViewHandlerProvider>();
+        _viewHandlerProvider = WebViewLocator.s_ResolverContext.GetIocService<IViewHandlerProvider>();
         ClipToBounds = false;
 
         _partEmptyViewPresenter = new()
