@@ -30,8 +30,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\..\Linux\Avalonia.WebView.Linux\Avalonia.WebView.Linux.csproj" />
-		<ProjectReference Include="..\..\Mac\Avalonia.WebView.MacCatalyst\Avalonia.WebView.MacCatalyst.csproj" />
 		<ProjectReference Include="..\..\Windows\Avalonia.WebView.Windows\Avalonia.WebView.Windows.csproj" />
 	</ItemGroup>
 
