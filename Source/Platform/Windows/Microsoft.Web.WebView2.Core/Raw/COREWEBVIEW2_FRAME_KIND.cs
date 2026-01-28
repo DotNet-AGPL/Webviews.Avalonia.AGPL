@@ -1,0 +1,15 @@
+using System.Runtime.CompilerServices;
+using System.Runtime.InteropServices;
+
+namespace Microsoft.Web.WebView2.Core.Raw;
+
+[CompilerGenerated]
+[TypeIdentifier("26D34152-879F-4065-BEA2-3DAA2CFADFB8", "Microsoft.Web.WebView2.Core.Raw.COREWEBVIEW2_FRAME_KIND")]
+public enum COREWEBVIEW2_FRAME_KIND
+{
+	COREWEBVIEW2_FRAME_KIND_UNKNOWN,
+	COREWEBVIEW2_FRAME_KIND_MAIN_FRAME,
+	COREWEBVIEW2_FRAME_KIND_IFRAME,
+	COREWEBVIEW2_FRAME_KIND_EMBED,
+	COREWEBVIEW2_FRAME_KIND_OBJECT
+}
